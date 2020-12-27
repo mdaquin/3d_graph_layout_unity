@@ -9,18 +9,18 @@ public class Graph : MonoBehaviour
   public GameObject nodepf;
   public GameObject edgepf; 
   public float width;
-  public float lenght;
-  public float heigth;
+  public float length;
+  public float height;
   
     void Start()
     {      
       if (file==null){	
 	// instantiate A, B, C, D, E
-	GameObject A = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-lenght/2, lenght/2), Random.Range(-heigth/2, heigth/2)), Quaternion.identity);
-	GameObject B = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-lenght/2, lenght/2), Random.Range(-heigth/2, heigth/2)), Quaternion.identity);
-	GameObject C = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-lenght/2, lenght/2), Random.Range(-heigth/2, heigth/2)), Quaternion.identity);
-	GameObject D = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-lenght/2, lenght/2), Random.Range(-heigth/2, heigth/2)), Quaternion.identity);
-	GameObject E = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-lenght/2, lenght/2), Random.Range(-heigth/2, heigth/2)), Quaternion.identity);      
+	GameObject A = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-length/2, length/2), Random.Range(-height/2, height/2)), Quaternion.identity);
+	GameObject B = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-length/2, length/2), Random.Range(-height/2, height/2)), Quaternion.identity);
+	GameObject C = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-length/2, length/2), Random.Range(-height/2, height/2)), Quaternion.identity);
+	GameObject D = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-length/2, length/2), Random.Range(-height/2, height/2)), Quaternion.identity);
+	GameObject E = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-length/2, length/2), Random.Range(-height/2, height/2)), Quaternion.identity);      
 	// make nodes children of graph object
 	A.transform.parent = transform;
 	B.transform.parent = transform;
@@ -78,7 +78,7 @@ public class Graph : MonoBehaviour
 	  }
 	  if (word == "[" && stage == 0 && currentobject == 1){
 	    stage = 1;
-	    GameObject go = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-lenght/2, lenght/2), Random.Range(-heigth/2, heigth/2)), Quaternion.identity);
+	    GameObject go = Instantiate(nodepf, new Vector3(Random.Range(-width/2, width/2), Random.Range(-length/2, length/2), Random.Range(-height/2, height/2)), Quaternion.identity);
 	    n = go.GetComponent<Node>();
 	    n.transform.parent = transform;
 	    n.SetEdgePrefab(edgepf);

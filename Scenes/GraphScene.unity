@@ -149,7 +149,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221459543}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &221459545
 Camera:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 221459543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c7639941ede2275a9e07533b356b9a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 7881a54b55e06093e9a400b09c776bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   graph: {fileID: 264391280}
@@ -247,15 +247,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 264391280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61bfea87a404e56f8b874fe8013d2e6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d4cc490207113000a9fc690bffcab7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  file: {fileID: 4900000, guid: 6d40c345e49c32cdc811c2434d29b50b, type: 3}
-  nodepf: {fileID: 1494905308091087785, guid: e5ca1a471809c9e2ca21d4c5f26f8161, type: 3}
-  edgepf: {fileID: 218713717392375747, guid: d6f16b3f09e2a85c9a79974f77c022fb, type: 3}
-  width: 700
-  lenght: 700
-  heigth: 700
+  file: {fileID: 4900000, guid: b344f29dac7d54656a1a194308d6fa3e, type: 3}
+  nodepf: {fileID: 8208513122908028583, guid: da3ade6e023b7100ea1a206788de85f4, type: 3}
+  edgepf: {fileID: 2006701754031461468, guid: 285eaa547166bce5bbdeb2d0d90b4b4c, type: 3}
+  width: 200
+  length: 200
+  height: 200
 --- !u!4 &264391282
 Transform:
   m_ObjectHideFlags: 0
